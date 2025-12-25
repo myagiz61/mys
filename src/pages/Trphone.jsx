@@ -1,148 +1,166 @@
-import SEO from "../components/SEO";
-import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Trphone() {
   return (
-    <>
-      <SEO
-        title="TRPHONE | Telefon Satıcıları için Mobil Uygulama"
-        description="TRPHONE, telefon satıcılarına özel geliştirilen abonelik ve öne çıkarma paketleri sunan mobil uygulamadır."
-      />
-
+    <div className="bg-white text-gray-800">
       {/* HERO */}
-      <section className="py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6">
+      <section className="bg-gradient-to-br from-gray-900 to-black text-white">
+        <div className="max-w-6xl mx-auto px-6 py-24 text-center">
+          <span className="uppercase tracking-widest text-sm text-gray-400">
+            Premium Satıcı Platformu
+          </span>
+
+          <h1 className="text-4xl md:text-5xl font-extrabold mt-4 mb-6">
             TRPHONE
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-10">
-            Telefon satıcılarına özel geliştirilen; ilan yönetimi, abonelik ve
-            öne çıkarma paketleri sunan mobil uygulama.
-          </p>
 
-          <Link
-            to="/iletisim"
-            className="inline-block px-7 py-3 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition"
-          >
-            Satıcı Olarak Başvur
-          </Link>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            Telefon satıcıları için geliştirilmiş, premium üyelik tabanlı,
+            dijital ilan ve satış yönetim platformu.
+          </p>
         </div>
       </section>
 
-      {/* PROBLEM / ÇÖZÜM */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">
-              Telefon Satıcıları için Geliştirildi
-            </h2>
-            <p className="text-slate-600 leading-relaxed mb-4">
-              TRPHONE, telefon satıcılarının ilanlarını daha görünür hale
-              getirmesi ve potansiyel müşterilere daha hızlı ulaşabilmesi için
-              tasarlanmıştır.
-            </p>
-            <p className="text-slate-600 leading-relaxed">
-              Abonelik ve öne çıkarma paketleri sayesinde satıcılar, ilanlarını
-              öne çıkararak satışlarını artırabilir.
-            </p>
-          </div>
+      {/* GENEL TANIM */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl font-bold mb-6">TRPHONE Nedir?</h2>
 
-          <div className="bg-white border rounded-2xl p-10">
-            <ul className="space-y-4 text-slate-700">
-              <li>✔ Satıcıya özel ilan yönetimi</li>
-              <li>✔ Paketli üyelik sistemi</li>
-              <li>✔ Günlük / haftalık / aylık öne çıkarma</li>
-              <li>✔ Güvenli ödeme altyapısı</li>
-              <li>✔ Mobil odaklı kullanıcı deneyimi</li>
+        <p className="text-lg leading-relaxed mb-4">
+          TRPHONE, bireysel ve kurumsal telefon satıcılarının mobil uygulama
+          üzerinden ilan oluşturabildiği, alıcılarla doğrudan iletişim
+          kurabildiği ve satış süreçlerini profesyonel şekilde yönetebildiği bir
+          dijital platformdur.
+        </p>
+
+        <p className="text-lg leading-relaxed text-gray-600">
+          Platform yalnızca <strong>dijital hizmet</strong> sunar. Fiziksel ürün
+          satışı veya kargo hizmeti bulunmamaktadır.
+        </p>
+      </section>
+
+      {/* PREMIUM SİSTEM */}
+      <section className="bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <h2 className="text-3xl font-bold mb-10">Premium Üyelik Sistemi</h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            <ul className="space-y-4 text-lg">
+              <li>• İlan ekleme ve düzenleme yetkisi</li>
+              <li>• Alıcılarla doğrudan mesajlaşma</li>
+              <li>• Satıcı profili ve mağaza görünümü</li>
+              <li>• Profesyonel satıcı rozeti</li>
+              <li>• İlan performans ve yönetim paneli</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* PAKETLER */}
-      <section className="py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-slate-900 mb-16">
-            Abonelik Paketleri
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {/* BASIC */}
-            <div className="border rounded-2xl p-10 text-center">
-              <h3 className="text-xl font-semibold mb-2">Basic</h3>
-              <p className="text-slate-600 mb-6">
-                Yeni başlayan satıcılar için
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-8">
-                <li>• Standart ilan yayınlama</li>
-                <li>• Temel profil görünümü</li>
-              </ul>
-              <span className="text-slate-900 font-semibold">
-                Aylık Abonelik
-              </span>
-            </div>
-
-            {/* STANDARD */}
-            <div className="border rounded-2xl p-10 text-center shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Standard</h3>
-              <p className="text-slate-600 mb-6">
-                Daha fazla görünürlük isteyenler
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-8">
-                <li>• Öncelikli ilanlar</li>
-                <li>• Gelişmiş profil</li>
-                <li>• Öne çıkarma desteği</li>
-              </ul>
-              <span className="text-slate-900 font-semibold">
-                Aylık Abonelik
-              </span>
-            </div>
-
-            {/* PREMIUM */}
-            <div className="border rounded-2xl p-10 text-center">
-              <h3 className="text-xl font-semibold mb-2">Premium</h3>
-              <p className="text-slate-600 mb-6">Profesyonel satıcılar için</p>
-              <ul className="space-y-3 text-slate-600 mb-8">
-                <li>• Maksimum görünürlük</li>
-                <li>• Sürekli öne çıkarma</li>
-                <li>• Öncelikli destek</li>
-              </ul>
-              <span className="text-slate-900 font-semibold">
-                Aylık Abonelik
-              </span>
+            <div className="rounded-2xl bg-gradient-to-br from-yellow-400/30 to-orange-500/30 p-[1px]">
+              <div className="bg-[#020617] rounded-2xl p-4">
+                <img
+                  src="/premium.png"
+                  alt="TRPHONE Premium Üyelik"
+                  className="
+        w-full
+        h-[380px]
+        object-contain
+        rounded-xl
+      "
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ÖNE ÇIKARMA */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">Öne Çıkarma Paketleri</h2>
-          <p className="text-slate-600 max-w-3xl mx-auto mb-10">
-            İlanlarınızı belirli sürelerle öne çıkararak daha fazla müşteriye
-            ulaşabilirsiniz.
-          </p>
-
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-            <div className="border rounded-xl px-8 py-6">1 Günlük</div>
-            <div className="border rounded-xl px-8 py-6">1 Haftalık</div>
-            <div className="border rounded-xl px-8 py-6">1 Aylık</div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-28 bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            TRPHONE ile Satışlarınızı Artırın
-          </h2>
-          <p className="text-slate-300 max-w-3xl mx-auto mb-10">
-            Telefon satıcılarına özel geliştirilen bu platformda yerinizi alın.
+          <p className="mt-6 text-gray-600">
+            Premium üyelikler aylık veya dönemsel olarak ücretlendirilir.
           </p>
         </div>
       </section>
-    </>
+
+      {/* BOOST */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl font-bold mb-10">
+          İlan Öne Çıkarma (Boost) Hizmeti
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+            <img
+              src="/plan.png"
+              alt="İlan Öne Çıkarma"
+              className="
+      w-full
+      h-[360px]
+      object-contain
+      rounded-xl
+    "
+            />
+          </div>
+
+          <ul className="space-y-4 text-lg">
+            <li>• İlanların ana sayfada öne çıkması</li>
+            <li>• Daha fazla görüntülenme ve etkileşim</li>
+            <li>• Zaman bazlı premium görünürlük</li>
+            <li>• Satış hızını artırmaya yönelik boost sistemi</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* ÖDEME */}
+      <section className="bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          <h2 className="text-3xl font-bold mb-6">Ödeme ve Güvenlik</h2>
+
+          <ul className="space-y-4 text-lg">
+            <li>• Ödemeler PayTR altyapısı ile güvenli şekilde alınır</li>
+            <li>• Kart bilgileri sistemimizde saklanmaz</li>
+            <li>• 3D Secure ve PCI-DSS uyumlu ödeme</li>
+            <li>• Tüm işlemler dijital hizmet kapsamındadır</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* KURUMSAL */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl font-bold mb-6">Kurumsal Bilgiler</h2>
+
+        <div className="space-y-3 text-lg">
+          <p>
+            <strong>Marka:</strong> TRPHONE
+          </p>
+          <p>
+            <strong>Geliştirici:</strong> MYS Software
+          </p>
+          <p>
+            <strong>Proje Sahibi:</strong> Mehmet Yağız Sındıraç
+          </p>
+          <p>
+            <strong>E-posta:</strong> mys@myssoftwares.com
+          </p>
+          <p>
+            <strong>Web:</strong>{" "}
+            <a
+              href="https://myssoftwares.com"
+              className="text-blue-600 underline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://myssoftwares.com
+            </a>
+          </p>
+        </div>
+      </section>
+
+      {/* YASAL */}
+      <section className="border-t bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col gap-3">
+          <a href="/gizlilik-politikasi" className="underline">
+            Gizlilik Politikası
+          </a>
+          <a href="/kvkk" className="underline">
+            KVKK Aydınlatma Metni
+          </a>
+          <a href="/kullanim-kosullari" className="underline">
+            Kullanım Koşulları
+          </a>
+        </div>
+      </section>
+    </div>
   );
 }
