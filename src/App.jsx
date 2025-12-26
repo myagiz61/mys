@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -15,23 +15,27 @@ import DistanceSales from "./pages/DistanceSales";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-1 mx-auto max-w-6xl px-4 py-8">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/trphone" element={<Trphone />} />
-          <Route path="/urunler" element={<Products />} />
-          <Route path="/hakkimizda" element={<About />} />
-          <Route path="/iletisim" element={<Contact />} />
-          <Route path="/hizmetler" element={<Services />} />
-          <Route path="/kvkk" element={<Kvkk />} />
-          <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
-          <Route path="/kullanim-sartlari" element={<Terms />} />
-          <Route path="/mesafeli-satis" element={<DistanceSales />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+
+        <main className="flex-1 mx-auto max-w-6xl px-4 py-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/trphone" element={<Trphone />} />
+            <Route path="/urunler" element={<Products />} />
+            <Route path="/hakkimizda" element={<About />} />
+            <Route path="/iletisim" element={<Contact />} />
+            <Route path="/hizmetler" element={<Services />} />
+            <Route path="/kvkk" element={<Kvkk />} />
+            <Route path="/gizlilik-politikasi" element={<PrivacyPolicy />} />
+            <Route path="/kullanim-sartlari" element={<Terms />} />
+            <Route path="/mesafeli-satis" element={<DistanceSales />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
